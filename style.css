@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+.container{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color:#2C3E50 ;
+    width:280px;
+    height: 350px;
+    text-align: center;
+    margin-top:100px;
+    margin-left: 400px;
+}
+.box1{
+    margin: 30px;
+    color:white;
+    position: relative;
+    
+}
+input{
+    position: absolute;
+    width:auto;
+    outline:none;
+    font-size: 1.0em;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index:1111;
+}
+
+input:focus,
+input:valid{
+    color:red;
+    
+}
+input:focus + .labelline,
+input:valid + .labelline{
+    color:red;
+    height:20px;
+    line-height:20px;
+   
+    transform: translate(-15px,-16px) scale(0.88);
+    z-index:1111;
+
+}
+   
